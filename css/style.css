@@ -6,6 +6,7 @@
 /* poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +15,36 @@
     -webkit-box-sizing: border-box;
 }
 
+:root {
+    /* fonts */
+    --nunito: 'Nunito';
+    --balsamiq-sans: 'Balsamiq Sans';
+    --poppins: 'Poppins';
+}
+
+html {
+    height: 100%;
+}
+
 body {
     height: 100%;
     width: 100%;
+    overflow-x: hidden;
+}
+
+header {
+    height: 15%;
+}
+
+main {
+    height: 65%;
+}
+
+nav a {
+    text-align: center;
+    font-family: var(--balsamiq-sans);
+}
+
+footer {
+    height: 20%;
 }
