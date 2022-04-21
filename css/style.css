@@ -26,15 +26,10 @@
     --color1: #b79bd1;
 }
 
-html {
-    height: 100%;
-}
-
 body {
     height: 100%;
     width: 100%;
     overflow-x: hidden;
-    background-color: lightblue;
 }
 
 header {
@@ -42,7 +37,7 @@ header {
 }
 
 main {
-    height: 150%;
+    height: 65%;
 }
 
 /* nav */
@@ -55,6 +50,7 @@ nav a {
 #logoNavBar {
     height: 100px;
     width: 100px;
+    cursor: pointer;
 }
 
 /* carousel */
@@ -62,6 +58,7 @@ nav a {
 .carousel-item img {
     height: 50vh;
     object-fit: cover;
+    -o-object-fit: cover;
 }
 
 #carouselIndex button {
@@ -81,8 +78,8 @@ h2 {
 #expositorIndex {
     height: 70%;
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
 }
 
 #expositorIndex .card {
@@ -118,6 +115,9 @@ h2 {
     background: #000;
     color: #fff;
     transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
     border-width: 1px;
     border-style: solid;
     border-color: #ccc;
@@ -127,6 +127,9 @@ h2 {
 .footer .social a:hover {
     opacity: 0.9;
     transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
     color: #24262b;
     background-color: #fff;
 }
@@ -141,7 +144,9 @@ h2 {
     text-align: center;
     display: flex;
     justify-content: center;
+    -ms-flex-line-pack: center;
     flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
 }
 
 .footer ul li {
@@ -158,6 +163,9 @@ h2 {
 .footer ul li a:hover {
     opacity: 1;
     transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
     color: #24262b;
 }
 
