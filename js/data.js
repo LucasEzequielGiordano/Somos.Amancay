@@ -5,521 +5,101 @@ const form = document.querySelector(".form")
 const search = document.getElementById("search")
 const lupa = document.getElementById("botonBusqueda")
 // productos
-const productos = [{
-        id: 0,
-        nombre: "lorepo",
-        precio: 0,
-        img: "../img/productos/producto1.jpg"
-    },
-    {
-        id: 1,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto2.jpg"
-    },
-    {
-        id: 2,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto3.jpg"
-    },
-    {
-        id: 3,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto4.jpg"
-    },
-    {
-        id: 4,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto5.jpg"
-    },
-    {
-        id: 5,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto6.jpg"
-    },
-    {
-        id: 6,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto7.jpg"
-    },
-    {
-        id: 7,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto8.jpg"
-    },
-    {
-        id: 8,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto9.jpg"
-    },
-    {
-        id: 9,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto10.jpg"
-    },
-    {
-        id: 10,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto11.jpg"
-    },
-    {
-        id: 11,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto12.jpg"
-    },
-    {
-        id: 12,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto13.jpg"
-    },
-    {
-        id: 13,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto14.jpg"
-    },
-    {
-        id: 14,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto15.png"
-    },
-    {
-        id: 15,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto16.png"
-    },
-    {
-        id: 16,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto17.png"
-    },
-    {
-        id: 17,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto18.png"
-    },
-    {
-        id: 18,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto19.png"
-    },
-    {
-        id: 19,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto20.png"
-    },
-    {
-        id: 20,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto21.png"
-    },
-    {
-        id: 21,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto22.png"
-    },
-    {
-        id: 22,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto23.png"
-    },
-    {
-        id: 23,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto24.png"
-    },
-    {
-        id: 24,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto25.png"
-    },
-    {
-        id: 25,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto26.jpg"
-    },
-    {
-        id: 26,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto27.jpg"
-    },
-    {
-        id: 27,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto28.jpg"
-    },
-    {
-        id: 28,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto29.jpg"
-    },
-    {
-        id: 29,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto30.jpg"
-    },
-    {
-        id: 30,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto31.jpg"
-    },
-    {
-        id: 31,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto32.jpg"
-    },
-    {
-        id: 32,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto33.jpg"
-    },
-    {
-        id: 33,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto34.jpg"
-    },
-    {
-        id: 34,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto35.jpg"
-    },
-    {
-        id: 35,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto36.jpg"
-    },
-    {
-        id: 36,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto37.jpg"
-    },
-    {
-        id: 37,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto38.jpg"
-    },
-    {
-        id: 38,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto39.jpg"
-    },
-    {
-        id: 39,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto40.jpg"
-    },
-    {
-        id: 40,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto41.jpg"
-    },
-    {
-        id: 41,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto42.jpg"
-    },
-    {
-        id: 42,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto43.jpg"
-    },
-    {
-        id: 43,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto44.jpg"
-    },
-    {
-        id: 44,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto45.jpg"
-    },
-    {
-        id: 45,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto46.jpg"
-    },
-    {
-        id: 46,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto47.jpg"
-    },
-    {
-        id: 47,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto48.jpg"
-    },
-    {
-        id: 48,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto49.jpg"
-    },
-    {
-        id: 49,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto50.jpg"
-    },
-    {
-        id: 50,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto51.jpg"
-    },
-    {
-        id: 51,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto52.jpg"
-    },
-    {
-        id: 52,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto53.jpg"
-    },
-    {
-        id: 53,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto54.jpg"
-    },
-    {
-        id: 54,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto55.jpg"
-    },
-    {
-        id: 55,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto56.jpg"
-    },
-    {
-        id: 56,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto57.jpg"
-    },
-    {
-        id: 57,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto58.jpg"
-    },
-    {
-        id: 58,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto59.jpg"
-    },
-    {
-        id: 59,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto60.jpg"
-    },
-    {
-        id: 60,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto61.jpg"
-    },
-    {
-        id: 61,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto62.jpg"
-    },
-    {
-        id: 62,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto63.jpg"
-    },
-    {
-        id: 63,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto64.jpg"
-    },
-    {
-        id: 64,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto65.jpg"
-    },
-    {
-        id: 65,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto66.jpg"
-    },
-    {
-        id: 66,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto67.jpg"
-    },
-    {
-        id: 67,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto68.jpg"
-    },
-    {
-        id: 68,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto69.jpg"
-    },
-    {
-        id: 69,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto70.jpg"
-    },
-    {
-        id: 70,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto71.jpg"
-    },
-    {
-        id: 71,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto72.jpg"
-    },
-    {
-        id: 72,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto73.jpg"
-    },
-    {
-        id: 73,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto74.jpg"
-    },
-    {
-        id: 74,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto75.jpeg"
-    },
-    {
-        id: 75,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto76.jpg"
-    },
-    {
-        id: 76,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto77.jpg"
-    },
-    {
-        id: 77,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto78.jpg"
-    },
-    {
-        id: 78,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto79.jpg"
-    },
-    {
-        id: 79,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto80.jpg"
-    },
-    {
-        id: 80,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto81.jpg"
-    },
-    {
-        id: 81,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto82.jpg"
-    },
-    {
-        id: 82,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto83.jpg"
-    },
-    {
-        id: 83,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto84.jpg"
-    },
-    {
-        id: 84,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto85.jpg"
-    },
-    {
-        id: 85,
-        nombre: "lorem",
-        precio: 0,
-        img: "../img/productos/producto86.jpg"
+class Producto {
+    constructor(id, nombre, precio, img) {
+        this.id = id
+        this.nombre = nombre
+        this.precio = precio
+        this.img = img
+        this.precioFinal = precio
     }
-]
+}
+
+let productos = []
+productos.push(new Producto(0, "lorem", 0, "../img/productos/producto1.jpg"))
+productos.push(new Producto(1, "lorem", 0, "../img/productos/producto2.jpg"))
+productos.push(new Producto(2, "lorem", 0, "../img/productos/producto3.jpg"))
+productos.push(new Producto(3, "lorem", 0, "../img/productos/producto4.jpg"))
+productos.push(new Producto(4, "lorem", 0, "../img/productos/producto5.jpg"))
+productos.push(new Producto(5, "lorem", 0, "../img/productos/producto6.jpg"))
+productos.push(new Producto(6, "lorem", 0, "../img/productos/producto7.jpg"))
+productos.push(new Producto(7, "lorem", 0, "../img/productos/producto8.jpg"))
+productos.push(new Producto(8, "lorem", 0, "../img/productos/producto9.jpg"))
+productos.push(new Producto(9, "lorem", 0, "../img/productos/producto10.jpg"))
+productos.push(new Producto(10, "lorem", 0, "../img/productos/producto11.jpg"))
+productos.push(new Producto(11, "lorem", 0, "../img/productos/producto12.jpg"))
+productos.push(new Producto(12, "lorem", 0, "../img/productos/producto13.jpg"))
+productos.push(new Producto(13, "lorem", 0, "../img/productos/producto14.jpg"))
+productos.push(new Producto(14, "lorem", 0, "../img/productos/producto15.png"))
+productos.push(new Producto(15, "lorem", 0, "../img/productos/producto16.png"))
+productos.push(new Producto(16, "lorem", 0, "../img/productos/producto17.png"))
+productos.push(new Producto(17, "lorem", 0, "../img/productos/producto18.png"))
+productos.push(new Producto(18, "lorem", 0, "../img/productos/producto19.png"))
+productos.push(new Producto(19, "lorem", 0, "../img/productos/producto20.png"))
+productos.push(new Producto(20, "lorem", 0, "../img/productos/producto21.png"))
+productos.push(new Producto(21, "lorem", 0, "../img/productos/producto22.png"))
+productos.push(new Producto(22, "lorem", 0, "../img/productos/producto23.png"))
+productos.push(new Producto(23, "lorem", 0, "../img/productos/producto24.png"))
+productos.push(new Producto(24, "lorem", 0, "../img/productos/producto25.png"))
+productos.push(new Producto(25, "lorem", 0, "../img/productos/producto26.jpg"))
+productos.push(new Producto(26, "lorem", 0, "../img/productos/producto27.jpg"))
+productos.push(new Producto(27, "lorem", 0, "../img/productos/producto28.jpg"))
+productos.push(new Producto(28, "lorem", 0, "../img/productos/producto29.jpg"))
+productos.push(new Producto(29, "lorem", 0, "../img/productos/producto30.jpg"))
+productos.push(new Producto(30, "lorem", 0, "../img/productos/producto31.jpg"))
+productos.push(new Producto(31, "lorem", 0, "../img/productos/producto32.jpg"))
+productos.push(new Producto(32, "lorem", 0, "../img/productos/producto33.jpg"))
+productos.push(new Producto(33, "lorem", 0, "../img/productos/producto34.jpg"))
+productos.push(new Producto(34, "lorem", 0, "../img/productos/producto35.jpg"))
+productos.push(new Producto(35, "lorem", 0, "../img/productos/producto36.jpg"))
+productos.push(new Producto(36, "lorem", 0, "../img/productos/producto37.jpg"))
+productos.push(new Producto(37, "lorem", 0, "../img/productos/producto38.jpg"))
+productos.push(new Producto(38, "lorem", 0, "../img/productos/producto39.jpg"))
+productos.push(new Producto(39, "lorem", 0, "../img/productos/producto40.jpg"))
+productos.push(new Producto(40, "lorem", 0, "../img/productos/producto41.jpg"))
+productos.push(new Producto(41, "lorem", 0, "../img/productos/producto42.jpg"))
+productos.push(new Producto(42, "lorem", 0, "../img/productos/producto43.jpg"))
+productos.push(new Producto(43, "lorem", 0, "../img/productos/producto44.jpg"))
+productos.push(new Producto(44, "lorem", 0, "../img/productos/producto45.jpg"))
+productos.push(new Producto(45, "lorem", 0, "../img/productos/producto46.jpg"))
+productos.push(new Producto(46, "lorem", 0, "../img/productos/producto47.jpg"))
+productos.push(new Producto(47, "lorem", 0, "../img/productos/producto48.jpg"))
+productos.push(new Producto(48, "lorem", 0, "../img/productos/producto49.jpg"))
+productos.push(new Producto(49, "lorem", 0, "../img/productos/producto50.jpg"))
+productos.push(new Producto(50, "lorem", 0, "../img/productos/producto51.jpg"))
+productos.push(new Producto(51, "lorem", 0, "../img/productos/producto52.jpg"))
+productos.push(new Producto(52, "lorem", 0, "../img/productos/producto53.jpg"))
+productos.push(new Producto(53, "lorem", 0, "../img/productos/producto54.jpg"))
+productos.push(new Producto(54, "lorem", 0, "../img/productos/producto55.jpg"))
+productos.push(new Producto(55, "lorem", 0, "../img/productos/producto56.jpg"))
+productos.push(new Producto(56, "lorem", 0, "../img/productos/producto57.jpg"))
+productos.push(new Producto(57, "lorem", 0, "../img/productos/producto58.jpg"))
+productos.push(new Producto(58, "lorem", 0, "../img/productos/producto59.jpg"))
+productos.push(new Producto(59, "lorem", 0, "../img/productos/producto60.jpg"))
+productos.push(new Producto(60, "lorem", 0, "../img/productos/producto61.jpg"))
+productos.push(new Producto(61, "lorem", 0, "../img/productos/producto62.jpg"))
+productos.push(new Producto(62, "lorem", 0, "../img/productos/producto63.jpg"))
+productos.push(new Producto(63, "lorem", 0, "../img/productos/producto64.jpg"))
+productos.push(new Producto(64, "lorem", 0, "../img/productos/producto65.jpg"))
+productos.push(new Producto(65, "lorem", 0, "../img/productos/producto66.jpg"))
+productos.push(new Producto(66, "lorem", 0, "../img/productos/producto67.jpg"))
+productos.push(new Producto(67, "lorem", 0, "../img/productos/producto68.jpg"))
+productos.push(new Producto(68, "lorem", 0, "../img/productos/producto69.jpg"))
+productos.push(new Producto(69, "lorem", 0, "../img/productos/producto70.jpg"))
+productos.push(new Producto(70, "lorem", 0, "../img/productos/producto71.jpg"))
+productos.push(new Producto(71, "lorem", 0, "../img/productos/producto72.jpg"))
+productos.push(new Producto(72, "lorem", 0, "../img/productos/producto73.jpg"))
+productos.push(new Producto(73, "lorem", 0, "../img/productos/producto74.jpg"))
+productos.push(new Producto(74, "lorem", 0, "../img/productos/producto75.jpeg"))
+productos.push(new Producto(75, "lorem", 0, "../img/productos/producto76.jpg"))
+productos.push(new Producto(76, "lorem", 0, "../img/productos/producto77.jpg"))
+productos.push(new Producto(77, "lorem", 0, "../img/productos/producto78.jpg"))
+productos.push(new Producto(78, "lorem", 0, "../img/productos/producto79.jpg"))
+productos.push(new Producto(79, "lorem", 0, "../img/productos/producto80.jpg"))
+productos.push(new Producto(80, "lorem", 0, "../img/productos/producto81.jpg"))
+productos.push(new Producto(81, "lorem", 0, "../img/productos/producto82.jpg"))
+productos.push(new Producto(82, "lorem", 0, "../img/productos/producto83.jpg"))
+productos.push(new Producto(83, "lorem", 0, "../img/productos/producto84.jpg"))
+productos.push(new Producto(84, "lorem", 0, "../img/productos/producto85.jpg"))
+productos.push(new Producto(85, "lorem", 0, "../img/productos/producto86.jpg"))
 console.log(productos)
