@@ -1,4 +1,4 @@
-/* opciones fuentes (si queres agrega más y elegimos) */
+/* opciones fuentes */
 /* nunito *kiditos* */
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap');
 /* balsamiq sans *kiditos* */
@@ -90,6 +90,9 @@ h2 {
     height: 60%;
 }
 
+.card-text {
+    font-family: var(--poppins);
+}
 
 /* footer */
 .footer {
@@ -158,6 +161,7 @@ h2 {
     color: inherit;
     text-decoration: none;
     opacity: 0.8;
+    font-family: var(--balsamiq-sans);
 }
 
 .footer ul li a:hover {
