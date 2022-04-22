@@ -1,6 +1,13 @@
+// elementos
+const navProductos = document.getElementById("navProductos")
+const main = document.querySelector("main")
+const form = document.querySelector(".form")
+const search = document.getElementById("search")
+const lupa = document.getElementById("botonBusqueda")
+// productos
 const productos = [{
         id: 0,
-        nombre: "lorem",
+        nombre: "lorepo",
         precio: 0,
         img: "../img/productos/producto1.jpg"
     },
