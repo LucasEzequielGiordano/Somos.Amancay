@@ -43,6 +43,7 @@ main {
 
 /* nav */
 
+
 .navBarIndex {
     z-index: 20;
 }
@@ -246,17 +247,82 @@ a {
     color: #aaa;
 }
 
-
 /* CARRITO */
 
 #carrito {
-    height: 200%;
-    width: 50%;
+    top: 10%;
+    height: 100%;
+    width: 30%;
     position: fixed;
     background-color: white;
-    left: 54%;
+    left: 70%;
     z-index: 1;
-    /*     padding-top: 60px; */
+    padding-top: 60px;
+}
+
+#carrito h4 {
+    margin-left: 36%;
+    margin-top: 1px;
+    line-height: 1.42;
+    letter-spacing: -0.24px;
+}
+
+.colorCarritoActivado {
+    background-color: red;
+    color: white;
+}
+
+#precioTotalCarritoIndex {
+    background-color: rgb(150, 204, 220);
+    height: 8%;
+    width: 50%;
+    position: fixed;
+    top: 73%;
+    left: 25%;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 14px;
+}
+
+#precioTotalCarritoIndex:hover {
+    cursor: pointer;
+    background-color: rgb(154, 196, 209);
+}
+
+#precioTotalCarritoIndex:active {
+    background-color: rgb(142, 176, 186);
+}
+
+#precioTotalCarritoIndex a {
+    text-decoration: none;
+}
+
+.contenedorBotonesCarrito i:hover {
+    cursor: pointer;
+}
+
+.contenedorBotonesCarrito i:active {
+    transform: scale(.9);
+}
+
+#precioTotalCarritoIndex h6 {
+    color: white;
+}
+
+#vaciarCarritoIndex {
+    position: fixed;
+    top: 82%;
+    left: 36%;
+}
+
+#vaciarCarritoIndex a {
+    text-decoration: none;
+    color: gray;
+}
+
+#vaciarCarritoIndex a:hover {
+    color: black;
+    cursor: pointer;
 }
 
 

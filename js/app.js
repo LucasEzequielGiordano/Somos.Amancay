@@ -14,7 +14,7 @@ function seccionProductos() {
           <div class="card-body">
             <h5 class="card-title">${element.nombre}</h5>
             <p class="card-text">$${element.precio}</p>
-            <a href="#" class="btn btn-primary">Comprar</a>
+            <a href="#" class="btn btn-primary btnComprar">Comprar</a>
           </div>
         </div>
         `
@@ -49,3 +49,6 @@ lupa.addEventListener("click", (e) => {
     })
   }
 })
+
+
+capturarBotones();
