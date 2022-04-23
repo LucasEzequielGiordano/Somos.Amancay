@@ -38,9 +38,14 @@ header {
 
 main {
     height: 65%;
+    margin-top: 10%;
 }
 
 /* nav */
+
+.navBarIndex {
+    z-index: 20;
+}
 
 nav a {
     text-align: center;
@@ -66,12 +71,13 @@ nav a {
 }
 
 
-
 /* expositor */
+
 h2 {
     text-align: center;
     font-family: var(--balsamiq-sans);
     font-size: 2.5rem;
+    margin-top: 5%;
 }
 
 
@@ -80,6 +86,7 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     -ms-flex-wrap: wrap;
+    margin-top: 2%;
 }
 
 #expositorIndex .card {
@@ -92,6 +99,11 @@ h2 {
 
 .card-text {
     font-family: var(--poppins);
+}
+
+.textoExpositor:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 /* SECCION PRODUCTOS */
@@ -141,10 +153,13 @@ a {
     max-height: 250px;
 }
 
-
+.cardProductos {
+    margin: 20px;
+}
 
 
 /* footer */
+
 .footer {
     padding: 40px 0 10px;
     background-color: #E7EEEA;
@@ -229,4 +244,17 @@ a {
     text-align: center;
     font-size: 13px;
     color: #aaa;
+}
+
+
+/* CARRITO */
+
+#carrito {
+    height: 200%;
+    width: 50%;
+    position: fixed;
+    background-color: white;
+    left: 54%;
+    z-index: 1;
+/*     padding-top: 60px; */
 }

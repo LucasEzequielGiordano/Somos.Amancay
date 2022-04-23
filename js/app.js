@@ -9,7 +9,7 @@ function seccionProductos() {
     main.innerHTML = `<h1 class="titleProductos">Productos</h1>`
     productos.forEach(element => {
         stockProductos.innerHTML += ` 
-        <div div class = "card col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3"
+        <div div class = "card col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 cardProductos"
         style = "width: 18rem;" >
           <img src="${element.img}" class="card-img-top" alt="...">
           <div class="card-body">
