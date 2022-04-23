@@ -256,5 +256,11 @@ a {
     background-color: white;
     left: 54%;
     z-index: 1;
-/*     padding-top: 60px; */
+    /*     padding-top: 60px; */
+}
+
+
+/* buscador */
+.filtro {
+    display: none;
 }

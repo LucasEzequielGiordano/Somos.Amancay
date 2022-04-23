@@ -16,7 +16,7 @@ class Producto {
 }
 
 let productos = []
-productos.push(new Producto(0, "lorem", 0, "../img/productos/producto1.jpg"))
+productos.push(new Producto(0, "lorep", 0, "../img/productos/producto1.jpg"))
 productos.push(new Producto(1, "lorem", 0, "../img/productos/producto2.jpg"))
 productos.push(new Producto(2, "lorem", 0, "../img/productos/producto3.jpg"))
 productos.push(new Producto(3, "lorem", 0, "../img/productos/producto4.jpg"))
