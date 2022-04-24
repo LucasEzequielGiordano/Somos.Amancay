@@ -46,6 +46,7 @@ main {
 
 .navBarIndex {
     z-index: 20;
+    background-color: white;
 }
 
 nav a {
