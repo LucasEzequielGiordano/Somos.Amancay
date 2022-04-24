@@ -9,12 +9,12 @@ function seccionProductos() {
   main.innerHTML = `<h1 class="titleProductos">Productos</h1>`
   productos.forEach(element => {
     stockProductos.innerHTML += ` 
-        <div class="card col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 cardProductos" id="${element.id}" style="width: 18rem;">
+        <div class="shadow card col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 cardProductos" id="${element.id}" style="width: 18rem;">
           <img src="${element.img}" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">${element.nombre}</h5>
             <p class="card-text">$${element.precio}</p>
-            <a href="#" class="btn btn-primary btnComprar">Comprar</a>
+            <a href="#" class="btn btn-primary">Comprar</a>
           </div>
         </div>
         `
@@ -26,6 +26,7 @@ function seccionProductos() {
 lupa.addEventListener("click", (e) => {
   let searchValue = search.value
   let stockBusqueda = document.createElement("div")
+  stockBusqueda.classList.add("stockProductos")
   if (searchValue == null || searchValue == undefined || searchValue == '') {
     window.location.reload()
   } else {
@@ -33,10 +34,10 @@ lupa.addEventListener("click", (e) => {
     main.textContent = ''
     search.value = ''
     let productosBuscados = productos.filter(element => element.nombre == searchValue)
-    console.log(productosBuscados)
+    main.innerHTML = `<h1 class="titleProductos">Productos</h1>`
     productosBuscados.forEach(element => {
       stockBusqueda.innerHTML += `
-      <div class="card col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 cardProductos" id="${element.id}" style="width: 18rem;">
+      <div class="shadow card col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 cardProductos" id="${element.id}" style="width: 18rem;">
         <img src="${element.img}" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">${element.nombre}</h5>
@@ -50,5 +51,4 @@ lupa.addEventListener("click", (e) => {
   }
 })
 
-
-capturarBotones();
+capturarBotones()
