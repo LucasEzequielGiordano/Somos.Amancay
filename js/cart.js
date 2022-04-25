@@ -38,6 +38,3 @@ let precioTotal = () => {
 let actualizarContadorCarrito = () => {
     document.querySelector("#contadorProductosCarrito").textContent = carrito.length;
 };
-
-
-

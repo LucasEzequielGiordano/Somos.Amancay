@@ -328,9 +328,3 @@ a {
     color: black;
     cursor: pointer;
 }
-
-
-/* buscador */
-.filtro {
-    display: none;
-}
