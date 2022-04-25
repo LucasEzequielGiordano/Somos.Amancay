@@ -127,15 +127,14 @@ h2 {
 }
 
 .stockProductos {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    -ms-flex-line-pack: center;
-    align-items: center;
-    -ms-flex-align: center;
-    flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    gap: 8%;
+    display: grid;
+    grid-template-rows: repeat(auto-fit,
+            minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit,
+            minmax(350px,
+                1fr));
+    gap: 16px;
+    place-items: center;
 }
 
 .stockProductos div {
@@ -166,6 +165,7 @@ a {
 /* footer */
 
 .footer {
+    width: 100%;
     padding: 40px 0 10px;
     background-color: #E7EEEA;
     bottom: 0;
