@@ -1,5 +1,6 @@
 // elementos
 const navProductos = document.getElementById("navProductos")
+const navContact = document.getElementById("navContact")
 const main = document.querySelector("main")
 const form = document.querySelector(".form")
 const search = document.getElementById("search")

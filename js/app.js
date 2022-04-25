@@ -8,8 +8,8 @@ function seccionProductos() {
   main.textContent = ""
   main.innerHTML = `<h1 class="titleProductos">Productos</h1>`
   productos.forEach(element => {
-    stockProductos.innerHTML += ` 
-        <div class="shadow card col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 cardProductos" id="${element.id}" style="width: 18rem;">
+    stockProductos.innerHTML += `
+        <div class="shadow card cardProductos" id="${element.id}" style="width: 18rem;">
           <img src="${element.img}" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">${element.nombre}</h5>
@@ -37,7 +37,7 @@ lupa.addEventListener("click", (e) => {
     main.innerHTML = `<h1 class="titleProductos">Productos</h1>`
     productosBuscados.forEach(element => {
       stockBusqueda.innerHTML += `
-      <div class="shadow card col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 cardProductos" id="${element.id}" style="width: 18rem;">
+      <div class="shadow card cardProductos" id="${element.id}" style="width: 18rem;">
         <img src="${element.img}" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">${element.nombre}</h5>
