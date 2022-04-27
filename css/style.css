@@ -60,6 +60,16 @@ nav a {
     cursor: pointer;
 }
 
+/* responsive header */
+@media only screen and (max-width: 450px) {
+    #logoNavBar {
+        height: 50px;
+        width: 50px;
+        cursor: pointer;
+    }
+}
+
+
 /* carousel */
 
 .carousel-item img {

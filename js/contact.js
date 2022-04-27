@@ -10,15 +10,15 @@ function seccionContacto() {
         </header>
         <div class="form-row">
             <label for="nombre">Nombre</label>
-            <input id="nombre" name="nombre" type="text" placeholder="Ingrese su nombre" required>
+            <input id="nombre" name="nombre" type="text" placeholder="Ingrese su nombre">
         </div>
         <div class="form-row">
             <label for="email">Mail</label>
-            <input id="email" name="email" type="email" placeholder="micorreo@gmail.com" required>
+            <input id="email" name="email" type="email" placeholder="micorreo@gmail.com">
         </div>
         <div class="form-row">
             <label for="mensaje">Escriba su mensaje</label>
-            <textarea name="textarea" id="mensaje"></textarea>
+            <textarea name="textarea" id="mensaje" placeholder="Me gustaría consultar..."></textarea>
             <div class="instructions">500 palabras o menos</div>
         </div>
         <div class="form-row">
