@@ -370,6 +370,7 @@ a {
 
 .speaker-form-header h1 {
     font-size: 30px;
+    text-align: center;
     margin-bottom: 20px;
 }
 
@@ -441,4 +442,29 @@ a {
 
 .form-row button:active {
     background-color: #407fc7;
+}
+
+/* responsive contacto */
+@media only screen and (min-width: 320px) and (max-width: 425px) {
+    .speaker-form-header {
+        width: 100%;
+        text-align: center;
+    }
+
+    .speaker-form {
+        width: 100%;
+        margin-top: 100px;
+    }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 1155px) {
+    .speaker-form-header {
+        width: 100%;
+        text-align: center;
+    }
+
+    .speaker-form {
+        width: 100%;
+        margin-top: 100px;
+    }
 }
