@@ -19,7 +19,7 @@ function seccionContacto() {
         <div class="form-row">
             <label for="mensaje">Escriba su mensaje</label>
             <textarea name="textarea" id="mensaje" placeholder="Me gustaría consultar..."></textarea>
-            <div class="instructions">500 palabras o menos</div>
+            <div class="instructions">¡Muchas Gracias!</div>
         </div>
         <div class="form-row">
             <button id="enviar">Enviar</button>
