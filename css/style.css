@@ -30,7 +30,7 @@ body {
     height: 100%;
     width: 100%;
     overflow-x: hidden;
-    background: linear-gradient(white, #f0ddff, #b89ad0);
+    background-color: #f9f1ff;
 }
 
 header {
