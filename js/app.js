@@ -12,13 +12,15 @@ function seccionProductos() {
         <div class="shadow card cardProductos" id="${element.id}" style="width: 18rem;">
           <img src="${element.img}" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">${element.nombre}</h5>
-            <p class="card-text">$${element.precio}</p>
-            <a href="#" class="btn btn-primary">Comprar</a>
+            <span style="display: none" class="idProducto">${element.id}</span>
+            <h5 class="card-title nombreProducto">${element.nombre}</h5>
+            <p class="card-text precioProducto">$${element.precio}</p>
+            <a href="#" class="btn btn-secondary btnComprar botonColorVioleta">Comprar</a>
           </div>
         </div>
         `
     main.appendChild(stockProductos)
+    capturarBotones()
   })
 }
 
@@ -42,7 +44,7 @@ lupa.addEventListener("click", (e) => {
         <div class="card-body">
           <h5 class="card-title">${element.nombre}</h5>
           <p class="card-text">$${element.precio}</p>
-          <a href="#" class="btn btn-primary">Comprar</a>
+          <a href="#" class="btn btn-primary btnComprar">Comprar</a>
         </div>
       </div>
       `

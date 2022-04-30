@@ -30,6 +30,7 @@ body {
     height: 100%;
     width: 100%;
     overflow-x: hidden;
+    background: linear-gradient(white, #f0ddff, #b89ad0);
 }
 
 header {
@@ -113,6 +114,10 @@ h2 {
     font-family: var(--poppins);
 }
 
+.textoExpositor {
+    font-size: 80%;
+}
+
 .textoExpositor:hover {
     text-decoration: underline;
     cursor: pointer;
@@ -189,6 +194,10 @@ a {
     }
 }
 
+.botonColorVioleta {
+    background-color: #b89ad0 !important;
+}
+
 
 /* footer */
 
@@ -224,6 +233,16 @@ a {
     border-style: solid;
     border-color: #ccc;
     border-radius: 50%;
+}
+
+.footer .social svg {
+    /* estoy viendo asi así queda centrado el icono | 30/04 */
+    margin-top: 10%;
+}
+
+.footer .social .iconoFacebook {
+    margin-left: 3%;
+    margin-top: 11%;
 }
 
 .footer .social a:hover {
@@ -292,13 +311,6 @@ a {
     padding-top: 60px;
 }
 
-#carrito h4 {
-    margin-left: 36%;
-    margin-top: 1px;
-    line-height: 1.42;
-    letter-spacing: -0.24px;
-}
-
 .colorCarritoActivado {
     background-color: red;
     color: white;
@@ -307,13 +319,18 @@ a {
 #precioTotalCarritoIndex {
     background-color: rgb(150, 204, 220);
     height: 8%;
-    width: 50%;
+    width: 60%;
     position: fixed;
     top: 73%;
-    left: 25%;
+    left: 20%;
     border-radius: 10px;
     text-align: center;
     padding-top: 14px;
+}
+
+.iconoBorrar:hover {
+    cursor: pointer;
+    transform: scale(.9);
 }
 
 #precioTotalCarritoIndex:hover {
@@ -356,6 +373,31 @@ a {
     color: black;
     cursor: pointer;
 }
+
+#contenedorProductos {
+    height: 59%;
+    overflow-x: hidden;
+}
+
+.contenedorProductoCarritoIndex {
+    border-bottom: 2px solid #e6e6e6;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+
+#contenedorProductos img {
+    width: 70px;
+    height: 70px;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+
+.tituloCarrito {
+    margin-left: 40%;
+    font-family: var(--balsamiq-sans);
+}
+
 
 /* conntacto */
 .speaker-form-header {
@@ -429,7 +471,7 @@ a {
     font-size: 16px;
     font-weight: 700;
     color: #fff;
-    background-color: #5995da;
+    background-color: #b89ad0;
     border: none;
     border-radius: 3px;
     padding: 10px 40px;
@@ -437,11 +479,11 @@ a {
 }
 
 .form-row button:hover {
-    background-color: #76aeed;
+    background-color: #b89ad0;
 }
 
 .form-row button:active {
-    background-color: #407fc7;
+    background-color: #b89ad0;
 }
 
 /* responsive contacto */

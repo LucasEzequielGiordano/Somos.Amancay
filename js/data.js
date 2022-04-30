@@ -12,18 +12,17 @@ class Producto {
         this.nombre = nombre
         this.precio = precio
         this.img = img
-        this.precioFinal = precio
     }
 }
 
 let productos = []
-productos.push(new Producto(0, "lorep", 100, "./img/productos/producto1.jpg"))
-productos.push(new Producto(1, "lorem", 150, "./img/productos/producto2.jpg"))
-productos.push(new Producto(2, "lorem", 200, "./img/productos/producto3.jpg"))
-productos.push(new Producto(3, "lorem", 300, "./img/productos/producto4.jpg"))
-productos.push(new Producto(4, "lorem", 400, "./img/productos/producto5.jpg"))
-productos.push(new Producto(5, "lorem", 550, "./img/productos/producto6.jpg"))
-productos.push(new Producto(6, "lorem", 1000, "./img/productos/producto7.jpg"))
+productos.push(new Producto(0, "loremProducto1", 100, "./img/productos/producto1.jpg"))
+productos.push(new Producto(1, "loremProducto2", 150, "./img/productos/producto2.jpg"))
+productos.push(new Producto(2, "loremProducto3", 200, "./img/productos/producto3.jpg"))
+productos.push(new Producto(3, "loremProducto4", 300, "./img/productos/producto4.jpg"))
+productos.push(new Producto(4, "loremProducto5", 400, "./img/productos/producto5.jpg"))
+productos.push(new Producto(5, "loremProducto6", 550, "./img/productos/producto6.jpg"))
+productos.push(new Producto(6, "loremProducto7", 1000, "./img/productos/producto7.jpg"))
 productos.push(new Producto(7, "lorem", 0, "./img/productos/producto8.jpg"))
 productos.push(new Producto(8, "lorem", 0, "./img/productos/producto9.jpg"))
 productos.push(new Producto(9, "lorem", 0, "./img/productos/producto10.jpg"))
