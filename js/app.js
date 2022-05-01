@@ -1,26 +1,27 @@
 /* PRODUCTOS DESTACADOS EN EL HOME */
 
-/* let expositorIndex = document.querySelector(".expositorProductosDestacados");
-let contenedorProductoDestacado = document.querySelector("div");
+let expositorIndex = document.querySelector(".ubicarProductosDestacados");
 productosDestacados.forEach(element => {
-  contenedorProductoDestacado.classList.add("d-flex", "justify-content-center", "col-sm-12", "col-md-6 col-lg-4 col-xl-3")
+  let contenedorProductoDestacado = document.createElement("div");
+  contenedorProductoDestacado.classList.add("justify-content-space-around", "col-sm-12", "col-md-6", "col-lg-4", "col-xl-3")
   contenedorProductoDestacado.innerHTML =
     `
-    <div class="card cardProductos" style="width: 18rem;">
-        <img src="${element.img}" class="card-img-top" alt="...">
-      <div class="card-body text-center">
-        <h5 class="card-title nombreProducto text-center">${element.nombre}</h5>
-        <p class="card-text textoExpositor">Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Porro
-          mollitia ratione sed quo ut non aspernatur vero vitae praesentium est.</p>
-        <p class="card-text precioProducto text-center">$${element.precio}</p>
-        <a href="#" class="btn btn-secondary btnComprar botonColorVioleta">Comprar</a>
+      <div class="card cardProductos" style="width: 18rem;">
+          <img src="${element.img}" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title nombreProducto text-center">${element.nombre}</h5>
+          <p class="card-text textoExpositor">Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Porro
+            mollitia ratione sed quo ut non aspernatur vero vitae praesentium est.</p>
+          <p class="card-text precioProducto text-center">$${element.precio}</p>
+          <a href="#" class="btn btn-secondary btnComprar botonColorVioleta">Comprar</a>
+        </div>
       </div>
-    </div>
   `
   expositorIndex.appendChild(contenedorProductoDestacado)
+  capturarBotones()
 })
- */
+
 
 // evento secccion productos
 navProductos.addEventListener("click", seccionProductos)
@@ -77,5 +78,3 @@ lupa.addEventListener("click", (e) => {
     })
   }
 })
-
-capturarBotones()
