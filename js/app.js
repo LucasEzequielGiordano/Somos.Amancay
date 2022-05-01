@@ -3,10 +3,10 @@
 let expositorIndex = document.querySelector(".ubicarProductosDestacados");
 productosDestacados.forEach(element => {
   let contenedorProductoDestacado = document.createElement("div");
-  contenedorProductoDestacado.classList.add("justify-content-space-around", "col-sm-12", "col-md-6", "col-lg-4", "col-xl-3")
+  contenedorProductoDestacado.classList.add("justify-content-center", "col-sm-12", "col-md-6", "col-lg-4", "col-xl-3", "mb-5")
   contenedorProductoDestacado.innerHTML =
     `
-      <div class="card cardProductos" style="width: 18rem;">
+      <div class="card cardProductos m-auto" style="width: 18rem;">
           <img src="${element.img}" class="card-img-top" alt="...">
         <div class="card-body text-center">
           <h5 class="card-title nombreProducto text-center">${element.nombre}</h5>
