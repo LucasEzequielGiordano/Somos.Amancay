@@ -86,8 +86,8 @@ let funcionalidadBotones = (e, i, capturar) => {
                                             <span>
                                         </div>
                                         <div class="col-7 text-center">
-                                            <p class="nombreDiscoEnCarrito">${nombreProducto}</p>
-                                            <p class="nombreDiscoEnCarrito"><strong>$${precio}</strong></p>
+                                            <p class="nombreProductoEnCarrito">${nombreProducto}</p>
+                                            <p class="nombreProductoEnCarrito"><strong>$${precio}</strong></p>
                                         </div>
                                         <div class="col-2">
                                             <i class="fas fa-trash iconoBorrarCarrito${id} iconoBorrar mt-3"></i>

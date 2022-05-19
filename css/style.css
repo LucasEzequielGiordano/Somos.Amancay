@@ -61,16 +61,6 @@ nav a {
     cursor: pointer;
 }
 
-/* responsive header */
-@media only screen and (max-width: 450px) {
-    #logoNavBar {
-        height: 50px;
-        width: 50px;
-        cursor: pointer;
-    }
-}
-
-
 /* carousel */
 
 .carousel-item img {
@@ -393,6 +383,43 @@ a {
 .tituloCarrito {
     margin-left: 40%;
     font-family: var(--balsamiq-sans);
+}
+
+/* QUERIES CARRITO */
+
+@media (min-width: 401px) and (max-width: 991px) {
+    #carrito {
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        background-color: white;
+        left: 12%;
+        z-index: 10;
+        padding-top: 60px;
+        border-left: 2px solid #e6e6e6;
+    }
+
+    .nombreProductoEnCarrito {
+        font-size: smaller;
+        padding-left: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    #carrito {
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        background-color: white;
+        left: 12%;
+        z-index: 10;
+        padding-top: 60px;
+        border-left: 2px solid #e6e6e6;
+    }
+
+    .nombreProductoEnCarrito {
+        font-size: smaller;
+    }
 }
 
 
