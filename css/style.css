@@ -30,7 +30,6 @@ body {
     height: 100%;
     width: 100%;
     overflow-x: hidden;
-    background-color: #f9f1ff;
 }
 
 header {
@@ -44,6 +43,29 @@ main {
 
 /* nav */
 
+nav {
+    border-bottom: 2px solid #e6e6e6;
+    ;
+}
+
+@media (min-width:991px) {
+    .navbar-brand-button {
+        order: 1;
+    }
+    .tituloNavBar{
+        display: none;
+    }
+}
+
+@media (max-width: 991px) {
+    .logoNav{
+        display: none;
+    }
+}
+
+nav .nav-item a:hover {
+    font-weight: 500;
+}
 
 .navBarIndex {
     z-index: 20;
@@ -296,6 +318,9 @@ a {
     left: 70%;
     z-index: 1;
     padding-top: 60px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    border: 1px solid lightgray;
 }
 
 .colorCarritoActivado {
@@ -389,14 +414,14 @@ a {
 
 @media (min-width: 401px) and (max-width: 991px) {
     #carrito {
+        top: 7%;
         height: 100%;
         width: 100%;
         position: fixed;
         background-color: white;
-        left: 12%;
-        z-index: 10;
+        left: 5%;
+        z-index: 0;
         padding-top: 60px;
-        border-left: 2px solid #e6e6e6;
     }
 
     .nombreProductoEnCarrito {
@@ -407,14 +432,14 @@ a {
 
 @media (max-width: 400px) {
     #carrito {
+        top: 7%;
         height: 100%;
         width: 100%;
         position: fixed;
         background-color: white;
-        left: 12%;
-        z-index: 10;
+        left: 5%;
+        z-index: 0;
         padding-top: 60px;
-        border-left: 2px solid #e6e6e6;
     }
 
     .nombreProductoEnCarrito {
