@@ -35,6 +35,6 @@ const validacionEmail = () => {
         const nombre = document.getElementById('nombre').value
         const mail = document.getElementById('email').value
         const mensaje = document.getElementById('mensaje').value
-        window.location.href = `mailto:lucasgiordano2219@gmail.com?subject=envioDesdeFormulario&body=Nombre%3A${nombre}%0ACorreo%3A${mail}%0AMensaje%3A${mensaje}`
+        window.location.href = `mailto:amancayjuegos@gmail.com?subject=envioDesdeFormulario&body=Nombre%3A${nombre}%0ACorreo%3A${mail}%0AMensaje%3A${mensaje}`
     })
 }

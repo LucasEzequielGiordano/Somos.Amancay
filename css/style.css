@@ -52,13 +52,14 @@ nav {
     .navbar-brand-button {
         order: 1;
     }
-    .tituloNavBar{
+
+    .tituloNavBar {
         display: none;
     }
 }
 
 @media (max-width: 991px) {
-    .logoNav{
+    .logoNav {
         display: none;
     }
 }
@@ -95,6 +96,54 @@ nav a {
     color: black;
 }
 
+/* queries carousel */
+@media only screen and (min-width: 320px) and (max-width: 425px) {
+    .carousel-item img {
+        height: 25vh;
+        object-fit: contain;
+        -o-object-fit: cover;
+    }
+
+    #carouselIndex button {
+        color: black;
+    }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 700px) {
+    .carousel-item img {
+        height: 35vh;
+        object-fit: contain;
+        -o-object-fit: cover;
+    }
+
+    #carouselIndex button {
+        color: black;
+    }
+}
+
+@media only screen and (min-width: 701px) and (max-width: 790px) {
+    .carousel-item img {
+        height: 35vh;
+        object-fit: cover;
+        -o-object-fit: cover;
+    }
+
+    #carouselIndex button {
+        color: black;
+    }
+}
+
+@media only screen and (min-width: 791px) and (max-width: 1082px) {
+    .carousel-item img {
+        height: 45vh;
+        object-fit: cover;
+        -o-object-fit: cover;
+    }
+
+    #carouselIndex button {
+        color: black;
+    }
+}
 
 /* expositor */
 

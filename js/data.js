@@ -109,7 +109,7 @@ productos.push(new Producto(85, "lorem", 0, "./img/productos/producto86.jpg", fa
 
 let productosDestacados = [];
 productos.forEach(element => {
-    if (element.destacado ==  true) {
+    if (element.destacado == true) {
         productosDestacados.push(element)
     }
 })
