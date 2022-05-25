@@ -1,4 +1,4 @@
-navContact.addEventListener('click', seccionContacto)
+const navContact = document.getElementById("navContact").addEventListener('click', seccionContacto)
 
 function seccionContacto() {
     main.textContent = ''

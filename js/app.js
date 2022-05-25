@@ -1,3 +1,7 @@
+// 
+const logoNav = document.getElementById('logoAmancay').addEventListener("click", () => window.location.reload())
+const main = document.querySelector('main')
+
 /* PRODUCTOS DESTACADOS EN EL HOME */
 
 let expositorIndex = document.querySelector(".ubicarProductosDestacados");
@@ -24,7 +28,7 @@ productosDestacados.forEach(element => {
 
 
 // evento secccion productos
-navProductos.addEventListener("click", seccionProductos)
+const navProductos = document.getElementById("navProductos").addEventListener("click", seccionProductos)
 // funcion productos
 function seccionProductos() {
   const stockProductos = document.createElement("div")
@@ -50,6 +54,8 @@ function seccionProductos() {
   })
 }
 
+const search = document.getElementById("search")
+const lupa = document.getElementById("botonBusqueda")
 // filtrado de busqueda
 lupa.addEventListener("click", (e) => {
   let searchValue = search.value

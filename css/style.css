@@ -26,6 +26,7 @@
     --color1: #b79bd1;
 }
 
+html,
 body {
     height: 100%;
     width: 100%;
@@ -37,7 +38,7 @@ header {
 }
 
 main {
-    height: 65%;
+    height: auto;
     margin-top: 10%;
 }
 
@@ -194,6 +195,7 @@ h2 {
 }
 
 .titleProductos {
+    margin-top: -100px;
     font-size: 2.5rem;
     font-family: var(--balsamiq-sans);
     text-align: center;
@@ -236,19 +238,19 @@ a {
 /* responsive productos */
 @media only screen and (min-width: 320px) and (max-width: 425px) {
     .titleProductos {
-        margin-top: 100px;
+        margin-top: -50px;
     }
 }
 
 @media only screen and (min-width: 426px) and (max-width: 715px) {
     .titleProductos {
-        margin-top: 115px;
+        margin-top: -65px;
     }
 }
 
 @media only screen and (min-width: 716px) and (max-width: 1082px) {
     .titleProductos {
-        margin-top: 125px;
+        margin-top: -75px;
     }
 }
 
@@ -260,15 +262,19 @@ a {
 /* footer */
 
 .footer {
+    height: 20%;
     width: 100%;
     padding: 40px 0 10px;
     background-color: #E7EEEA;
     bottom: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .footer .social {
     text-align: center;
-    margin-bottom: 25px;
+    /* margin-bottom: 25px; */
+    /* margin-top: 25px; */
     color: #4b4c4d;
 }
 
@@ -294,7 +300,6 @@ a {
 }
 
 .footer .social svg {
-    /* estoy viendo asi así queda centrado el icono | 30/04 */
     margin-top: 10%;
 }
 
@@ -350,7 +355,7 @@ a {
 }
 
 .footer .copyright {
-    margin-top: 15px;
+    margin-top: 30px;
     text-align: center;
     font-size: 13px;
     color: #aaa;
@@ -520,7 +525,7 @@ a {
     border-radius: 3px;
     width: 80%;
     padding: 50px;
-    margin: auto;
+    margin: -150px auto 10px;
 }
 
 .form-row {
@@ -593,7 +598,8 @@ a {
 
     .speaker-form {
         width: 100%;
-        margin-top: 100px;
+        /* margin-top: 100px; */
+        margin: -50px auto 10px;
     }
 }
 
@@ -605,6 +611,7 @@ a {
 
     .speaker-form {
         width: 100%;
-        margin-top: 100px;
+        /* margin-top: 100px; */
+        margin: -100px auto 10px;
     }
 }
