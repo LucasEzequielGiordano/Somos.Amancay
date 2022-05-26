@@ -29,7 +29,7 @@ document.getElementById('botiquinJuegos').addEventListener('click', () => {
     divBotiquin.className = 'divBotiquin'
     botiquinJuegos.forEach(element => {
         divBotiquin.innerHTML += `
-        <div class="tip${element.id}">
+        <div class="juegos${element.id}">
         <img src="${element.imagen}">
         <p>${element.descripcion}</p>
         </div>
@@ -49,7 +49,7 @@ document.getElementById('botiquinMindfullness').addEventListener('click', () => 
     divBotiquin.className = 'divBotiquin'
     botiquinMindfullness.forEach(element => {
         divBotiquin.innerHTML += `
-        <div class="tip${element.id}">
+        <div class="mindfullness${element.id}">
         <img src="${element.imagen}">
         <p>${element.descripcion}</p>
         </div>
@@ -69,7 +69,7 @@ document.getElementById('botiquinCuentos').addEventListener('click', () => {
     divBotiquin.className = 'divBotiquin'
     botiquinCuentos.forEach(element => {
         divBotiquin.innerHTML += `
-        <div class="tip${element.id}">
+        <div class="cuentos${element.id}">
         <img src="${element.imagen}">
         <p>${element.descripcion}</p>
         </div>

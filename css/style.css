@@ -609,5 +609,43 @@ a {
 
 /* Botiquin emocional */
 .botiquinEmocional {
-    margin-top: -10px;
+    margin: -5px 0 25px;
+}
+
+.divBotiquin {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 50px;
+}
+
+.divBotiquin div {
+    max-width: 500px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.divBotiquin img {
+    max-height: 500px;
+    max-width: 1000px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-shadow: 0px 10px 40px rgba(3, 19, 23, 0.25);
+}
+
+.divBotiquin p {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: baseline;
+}
+
+.divBotiquin h6 {
+     text-align: center;
 }
