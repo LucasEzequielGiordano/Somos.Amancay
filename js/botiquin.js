@@ -1,15 +1,79 @@
-const recursero = () => {
+//  SubSection Tip
+document.getElementById('botiquinTip').addEventListener('click', () => {
     main.innerHTML = ''
-    main.className = 'mainBotiquin'
     const botiquinEmocional = document.createElement('h2')
     botiquinEmocional.className = 'botiquinEmocional'
-    botiquinEmocional.innerHTML = 'Botiquin Emocional'
+    botiquinEmocional.innerHTML = 'Tip'
     main.appendChild(botiquinEmocional)
     const divBotiquin = document.createElement('div')
     divBotiquin.className = 'divBotiquin'
-    divBotiquin.innerHTML = `
-    
-    `
-}
+    botiquinTip.forEach(element => {
+        divBotiquin.innerHTML += `
+        <div class="tip${element.id}">
+        <img src="${element.imagen}">
+        <p>${element.descripcion}</p>
+        </div>
+        `
+    })
+    main.appendChild(divBotiquin)
+})
 
-const navBotiquin = document.getElementById('navBotiquin').addEventListener('click', recursero)
+//  SubSection Juegos
+document.getElementById('botiquinJuegos').addEventListener('click', () => {
+    main.innerHTML = ''
+    const botiquinEmocional = document.createElement('h2')
+    botiquinEmocional.className = 'botiquinEmocional'
+    botiquinEmocional.innerHTML = 'Juegos'
+    main.appendChild(botiquinEmocional)
+    const divBotiquin = document.createElement('div')
+    divBotiquin.className = 'divBotiquin'
+    botiquinJuegos.forEach(element => {
+        divBotiquin.innerHTML += `
+        <div class="tip${element.id}">
+        <img src="${element.imagen}">
+        <p>${element.descripcion}</p>
+        </div>
+        `
+    })
+    main.appendChild(divBotiquin)
+})
+
+// SubSection Mindfullness
+document.getElementById('botiquinMindfullness').addEventListener('click', () => {
+    main.innerHTML = ''
+    const botiquinEmocional = document.createElement('h2')
+    botiquinEmocional.className = 'botiquinEmocional'
+    botiquinEmocional.innerHTML = 'Mindfullness'
+    main.appendChild(botiquinEmocional)
+    const divBotiquin = document.createElement('div')
+    divBotiquin.className = 'divBotiquin'
+    botiquinMindfullness.forEach(element => {
+        divBotiquin.innerHTML += `
+        <div class="tip${element.id}">
+        <img src="${element.imagen}">
+        <p>${element.descripcion}</p>
+        </div>
+        `
+    })
+    main.appendChild(divBotiquin)
+})
+
+// SubSection Cuentos
+document.getElementById('botiquinCuentos').addEventListener('click', () => {
+    main.innerHTML = ''
+    const botiquinEmocional = document.createElement('h2')
+    botiquinEmocional.className = 'botiquinEmocional'
+    botiquinEmocional.innerHTML = 'Cuentos'
+    main.appendChild(botiquinEmocional)
+    const divBotiquin = document.createElement('div')
+    divBotiquin.className = 'divBotiquin'
+    botiquinCuentos.forEach(element => {
+        divBotiquin.innerHTML += `
+        <div class="tip${element.id}">
+        <img src="${element.imagen}">
+        <p>${element.descripcion}</p>
+        </div>
+        `
+    })
+    main.appendChild(divBotiquin)
+})
