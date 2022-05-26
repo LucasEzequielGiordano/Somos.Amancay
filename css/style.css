@@ -218,11 +218,13 @@ h2 {
 .stockProductos div h5,
 p,
 a {
+    text-align: center;
     font-family: var(--poppins);
 }
 
 .stockProductos div img {
-    max-height: 250px;
+    max-height: 235px;
+    max-width: 300px;
 }
 
 .cardProductos {
@@ -639,12 +641,72 @@ a {
 }
 
 .divBotiquin p {
-     display: flex;
-     flex-direction: row;
-     flex-wrap: wrap;
-     justify-content: baseline;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: baseline;
 }
 
 .divBotiquin h6 {
     text-align: center;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 649px) {
+    .divBotiquin div {
+        max-width: 300px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+
+    .divBotiquin img {
+        max-height: 300px;
+        max-width: 800px;
+        margin-bottom: 25px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        box-shadow: 0px 10px 40px rgba(3, 19, 23, 0.25);
+    }
+}
+
+@media only screen and (min-width: 650px) and (max-width: 849px) {
+    .divBotiquin div {
+        max-width: 300px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+
+    .divBotiquin img {
+        max-height: 300px;
+        max-width: 800px;
+        margin-bottom: 25px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        box-shadow: 0px 10px 40px rgba(3, 19, 23, 0.25);
+    }
+}
+
+@media only screen and (min-width: 850px) and (max-width: 1050px) {
+    .divBotiquin div {
+        max-width: 400px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+
+    .divBotiquin img {
+        max-height: 400px;
+        max-width: 900px;
+        margin-bottom: 25px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        box-shadow: 0px 10px 40px rgba(3, 19, 23, 0.25);
+    }
 }

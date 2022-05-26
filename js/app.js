@@ -17,7 +17,6 @@ productosDestacados.forEach(element => {
           <p class="card-text textoExpositor">Lorem ipsum dolor sit amet consectetur adipisicing
             elit. Porro
             mollitia ratione sed quo ut non aspernatur vero vitae praesentium est.</p>
-          <p class="card-text precioProducto text-center">$${element.precio}</p>
           <a href="#" class="btn btn-secondary btnComprar botonColorVioleta">Comprar</a>
         </div>
       </div>
@@ -44,7 +43,6 @@ function seccionProductos() {
             <div class="card-body">
               <span style="display: none" class="idProducto">${element.id}</span>
               <h5 class="card-title nombreProducto text-center">${element.nombre}</h5>
-              <p class="card-text precioProducto">$${element.precio}</p>
               <a href="#" class="btn btn-secondary btnComprar botonColorVioleta">Comprar</a>
             </div>
           </div>
