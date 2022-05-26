@@ -11,6 +11,7 @@ document.getElementById('botiquinTip').addEventListener('click', () => {
         divBotiquin.innerHTML += `
         <div class="tip${element.id}">
         <img src="${element.imagen}">
+        <h6>${element.titulo}</h6>
         <p>${element.descripcion}</p>
         </div>
         `
@@ -31,6 +32,7 @@ document.getElementById('botiquinJuegos').addEventListener('click', () => {
         divBotiquin.innerHTML += `
         <div class="juegos${element.id}">
         <img src="${element.imagen}">
+        <h6>${element.titulo}</h6>
         <p>${element.descripcion}</p>
         </div>
         `
@@ -51,6 +53,7 @@ document.getElementById('botiquinMindfullness').addEventListener('click', () => 
         divBotiquin.innerHTML += `
         <div class="mindfullness${element.id}">
         <img src="${element.imagen}">
+        <h6>${element.titulo}</h6>
         <p>${element.descripcion}</p>
         </div>
         `
@@ -71,6 +74,7 @@ document.getElementById('botiquinCuentos').addEventListener('click', () => {
         divBotiquin.innerHTML += `
         <div class="cuentos${element.id}">
         <img src="${element.imagen}">
+        <h6>${element.titulo}</h6>
         <p>${element.descripcion}</p>
         </div>
         `
