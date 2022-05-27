@@ -173,27 +173,6 @@ const botiquinTip = [{
     },
     {
         id: 4,
-        imagen: './img/botiquin/cajaComunicacion.png',
-        titulo: `Caja de comunicación📮✨`,
-        descripcion: `
-        Hoy queremos compartirles una idea para hacer en casa, y porqué no en el aula, como feedback de nuestro día a día.⁣🔄💫<br>
-        La educación emocional es un proceso, y como tal implica una secuencia de pasos :⁣<br>
-        🔸Reconocer y nombrar nuestras emociones⁣<br>
-        🔸Aceptarlas y validarlas como entendíbles.<br>⁣
-        🔸Expresarlas.⁣<br>
-        🔸Y por último, poder regularlas.⁣ <br>
-        Con esta actividad podemos trabajar varias de estas etapas ❣️❣️<br>
-        La propuesta es escribir (o dibujar) cosas/momentos que los y las demás hicieron por nosotros y nos hicieron sentir bien o no tan bien. Todo se va guardando en una cajita y podemos elegir cada cuanto tiempo abrirla y compartir lo que sentimos.⁣<br>
-        💡✨Frases disparadoras que podemos utilizar :<br>         
-        🔸Me gustó cuando...⁣<br>
-        🔸No me gustó cuando...⁣<br>
-        🔸Me sentí _______ (de determinada manera) cuando....⁣<br>
-        🔸Gracias por...⁣ <br>
-        🔸Me gustaría que...
-        `
-    },
-    {
-        id: 5,
         imagen: './img/botiquin/respiracionHeroes.png',
         titulo: `Respiración de superheroes y superheroinas🦸🏼‍♂️🦸🏽‍♀️✨`,
         descripcion: `⁣
