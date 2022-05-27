@@ -23,12 +23,28 @@ botonCarrito.addEventListener("click", () => {
 document.querySelector(".vaciarCarro").addEventListener("click", () => {
     carrito = [];
     document.querySelector("#contadorProductosCarrito").textContent = carrito.length;
-    document.querySelector("#subtotal").textContent = 0;
     let hijosCarrito = contenedorProductosCarrito.childNodes
     while (hijosCarrito.length != 0) {
         hijosCarrito[0].remove();
     }
 });
+
+document.querySelector("#botonPagar").addEventListener("click", () => {
+    if (carrito.length !== 0) {
+        let carritoNombres = []
+        for (let index = 0; index < carrito.length; index++) {
+            carritoNombres.push(carrito[index].nombre)
+        }
+        let cantProductos = carritoNombres.length;
+        if (cantProductos !== 1) {
+            let productosCarro = carritoNombres.join(" | ");
+            var win = window.open(`https://api.whatsapp.com/send?phone=541150127243&text=Hola, me gustaría consultar por los productos: ${productosCarro}`, '_blank');
+        } else {
+            let productosCarro = carritoNombres.join("");
+            var win = window.open(`https://api.whatsapp.com/send?phone=541150127243&text=Hola, me gustaría consultar por el producto: ${productosCarro}`, '_blank');
+        }
+    }
+})
 
 /* FUNCIONES */
 
@@ -36,19 +52,9 @@ let actualizarContadorCarrito = () => {
     document.querySelector("#contadorProductosCarrito").textContent = carrito.length;
 };
 
-let precioTotal = () => {
-    let totalPrice = 0;
-    carrito.forEach(element => {
-        totalPrice += element.precio;
-    });
-    document.querySelector("#subtotal").textContent = totalPrice;
-    return totalPrice;
-};
-
 let capturarBotones = () => {
     arregloBtnComprar = document.querySelectorAll(".btnComprar");
     let capturar = 1;
-    precioTotal();
     actualizarContadorCarrito();
     for (let i = 0; i < arregloBtnComprar.length; i++) {
         arregloBtnComprar[i].addEventListener("click", (e) => {
@@ -67,7 +73,6 @@ let funcionalidadBotones = (e, i, capturar) => {
     let producto = productos.filter(x => x.nombre == nombre);
     let nombreProducto = producto[0].nombre;
     if (carrito.some(x => x.nombre == nombreProducto)) {
-        console.log('EL PRODUCTO ' + nombreProducto + ' YA SE ENCUENTRA EN EL CARRITO.');
     } else {
         let precio = producto[0].precio;
         let img = producto[0].img;
@@ -86,16 +91,16 @@ let funcionalidadBotones = (e, i, capturar) => {
                                             <span>
                                         </div>
                                         <div class="col-7 text-center">
+                                            <br>
                                             <p class="nombreProductoEnCarrito">${nombreProducto}</p>
-                                            <p class="nombreProductoEnCarrito"><strong>$${precio}</strong></p>
+    
                                         </div>
                                         <div class="col-2">
-                                            <i class="fas fa-trash iconoBorrarCarrito${id} iconoBorrar mt-3"></i>
+                                            <i class="mt-4 fas fa-trash iconoBorrarCarrito${id} iconoBorrar mt-3"></i>
                                         </div>
                                     </div>
                                 </div>            
                 `
-        console.log(productoCarritoIndex);
         contenedorProductosCarrito.append(productoCarritoIndex);
         let selectorBorrar = ".iconoBorrarCarrito" + id;
         document.querySelector(selectorBorrar).addEventListener("click", () => {
@@ -103,11 +108,8 @@ let funcionalidadBotones = (e, i, capturar) => {
             let selectorABorrar = ".contenedorCarrito" + id;
             document.querySelector(selectorABorrar).remove();
             carrito.splice(index, 1);
-            precioTotal();
             actualizarContadorCarrito()
         })
     }
-
-    precioTotal();
     actualizarContadorCarrito()
 }

@@ -368,7 +368,6 @@ a {
     padding-top: 60px;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
-    border: 1px solid lightgray;
 }
 
 .colorCarritoActivado {
@@ -475,6 +474,7 @@ a {
     .nombreProductoEnCarrito {
         font-size: smaller;
         padding-left: 10px;
+
     }
 }
 
