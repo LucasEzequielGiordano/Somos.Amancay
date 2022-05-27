@@ -3,9 +3,9 @@ const form = document.querySelector(".form")
 class Producto {
     constructor(id, nombre, img, destacado) {
         this.id = id,
-        this.nombre = nombre,
-        this.img = img,
-        this.destacado = destacado
+            this.nombre = nombre,
+            this.img = img,
+            this.destacado = destacado
     }
 }
 
@@ -111,7 +111,7 @@ productos.forEach(element => {
 // productos del recursero
 const botiquinTip = [{
         id: 0,
-        imagen: '../img/botiquin/cajaComunicacion.png',
+        imagen: './img/botiquin/cajaComunicacion.png',
         titulo: `Caja de comunicación📮✨`,
         descripcion: `
         Hoy queremos compartirles una idea para hacer en casa, y porqué no en el aula, como feedback de nuestro día a día.⁣🔄💫<br>
@@ -131,7 +131,7 @@ const botiquinTip = [{
         `
     }, {
         id: 1,
-        imagen: '../img/botiquin/momentoGratitud.png',
+        imagen: './img/botiquin/momentoGratitud.png',
         titulo: `Momento de gratitud 🙌🏽✨⁣`,
         descripcion: `
         Hoy queremos compartirles esta pequeña actividad que no es otra cosa más que una invitación a agradecer, a identificar que nos gustó y nos hizo bien en este día.⁣❣️⁣<br>
@@ -144,7 +144,7 @@ const botiquinTip = [{
     },
     {
         id: 2,
-        imagen: '../img/botiquin/respiracionCuadrado.png',
+        imagen: './img/botiquin/respiracionCuadrado.png',
         titulo: `Respiración del cuadrado⏹️✨`,
         descripcion: `
         Llega fin de año y nuestro cuerpo nos pide un descanso. Nos sentimos agotadas, nos cuesta concentrarnos... ¡No damos mas!⁣😴😴<br>
@@ -160,7 +160,7 @@ const botiquinTip = [{
     },
     {
         id: 3,
-        imagen: '../img/botiquin/respiracionFlor.png',
+        imagen: './img/botiquin/respiracionFlor.png',
         titulo: `Respiración de la Flor⁣ 🌻🌻🌻`,
         descripcion: `
         La respiración de la flor es la forma perfecta para empezar a enseñarles a las y los niños de qué trata el Yoga, ¡y de manera divertida!⁣ 🥳<br>
@@ -173,7 +173,7 @@ const botiquinTip = [{
     },
     {
         id: 4,
-        imagen: '../img/botiquin/cajaComunicacion.png',
+        imagen: './img/botiquin/cajaComunicacion.png',
         titulo: `Caja de comunicación📮✨`,
         descripcion: `
         Hoy queremos compartirles una idea para hacer en casa, y porqué no en el aula, como feedback de nuestro día a día.⁣🔄💫<br>
@@ -194,7 +194,7 @@ const botiquinTip = [{
     },
     {
         id: 5,
-        imagen: '../img/botiquin/respiracionHeroes.png',
+        imagen: './img/botiquin/respiracionHeroes.png',
         titulo: `Respiración de superheroes y superheroinas🦸🏼‍♂️🦸🏽‍♀️✨`,
         descripcion: `⁣
         🤸🏽‍♂️Llegó el fin de semana y los y las invitamos a relajar con estos movimientos🤸🏽‍♂️<br>⁣
@@ -206,7 +206,7 @@ const botiquinTip = [{
 ]
 const botiquinJuegos = [{
         id: 0,
-        imagen: '../img/botiquin/buenasNoticias.png',
+        imagen: './img/botiquin/buenasNoticias.png',
         titulo: `Buenas noticias⁣✨`,
         descripcion: `
         ¡Holaaaa! Esperamos que estén muy, pero muy, bien.⁣🤗🤗<br>⁣
@@ -218,7 +218,7 @@ const botiquinJuegos = [{
     },
     {
         id: 1,
-        imagen: '../img/botiquin/mimicaEmociones.png',
+        imagen: './img/botiquin/mimicaEmociones.png',
         titulo: `Mímica de emociones💛✨`,
         descripcion: `
         Estamos muy ansiosas por el sorteo de esta tarde y decidimos jugar para pasar el rato.⁣🥳🥳<br>⁣
@@ -229,7 +229,7 @@ const botiquinJuegos = [{
 ]
 const botiquinMindfullness = [{
         id: 0,
-        imagen: '../img/botiquin/mindfullness.png',
+        imagen: './img/botiquin/mindfullness.png',
         titulo: `Mindfullness✨`,
         descripcion: `
         Mindfullness quiere decir atención plena: Es prestar atención a lo que está sucediendo(nos)🦋✨<br>
@@ -243,7 +243,7 @@ const botiquinMindfullness = [{
         `
     }, {
         id: 1,
-        imagen: '../img/botiquin/respiracionAbrazo.png',
+        imagen: './img/botiquin/respiracionAbrazo.png',
         titulo: `¡Más abrazos por favor!💜✨`,
         descripcion: `
         Arrancamos la semana con una invitación muy especial: abrazarnos.<br>
@@ -253,7 +253,7 @@ const botiquinMindfullness = [{
     },
     {
         id: 2,
-        imagen: '../img/botiquin/respiracionMontania.png',
+        imagen: './img/botiquin/respiracionMontania.png',
         titulo: `Montañas, siempre💫💛`,
         descripcion: `
         Se acercan las vacaciones y nosotras no podemos dejar de pensar en viajar⛰🌈<br>
@@ -263,7 +263,7 @@ const botiquinMindfullness = [{
     },
     {
         id: 3,
-        imagen: '../img/botiquin/soploDragon.png',
+        imagen: './img/botiquin/soploDragon.png',
         titulo: `La respiración del dragón 🐉✨`,
         descripcion: `⁣
         Un elemento importante de la atención es aprender a controlar la respiración. Y hay una manera de hacer que esta actividad sea muy divertida, con la respiración del dragón:🥳🥳<br>⁣
@@ -276,28 +276,28 @@ const botiquinMindfullness = [{
     }
     // {
     //     id: 4,
-    //     imagen: '../img/botiquin/1soploDragon.png',
+    //     imagen: './img/botiquin/1soploDragon.png',
     //     descripcion: ``
     // },
     // {
     //     id: 5,
-    //     imagen: '../img/botiquin/2soploDragon.png',
+    //     imagen: './img/botiquin/2soploDragon.png',
     //     descripcion: ``
     // },
     // {
     //     id: 6,
-    //     imagen: '../img/botiquin/3soploDragon.png',
+    //     imagen: './img/botiquin/3soploDragon.png',
     //     descripcion: ``
     // },
     // {
     //     id: 7,
-    //     imagen: '../img/botiquin/4soploDragon.png',
+    //     imagen: './img/botiquin/4soploDragon.png',
     //     descripcion: ``
     // }
 ]
 const botiquinCuentos = [{
     id: 0,
-    imagen: '../img/botiquin/soyPorqueSomos.png',
+    imagen: './img/botiquin/soyPorqueSomos.png',
     titulo: `UBUNTU💫`,
     descripcion: `
     En estos días turbulentos, donde las diferencias se ponen por arriba de los puntos de encuentro, queríamos compartirles este hermoso cuento para reflexionar juntos y juntas.💜🌈<br>

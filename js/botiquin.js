@@ -31,7 +31,7 @@ document.getElementById('botiquinJuegos').addEventListener('click', () => {
     botiquinJuegos.forEach(element => {
         divBotiquin.innerHTML += `
         <div class="juegos${element.id}">
-        <img src="${element.imagen}">
+        <img src="${element.imagen}" >
         <h6>${element.titulo}</h6>
         <p>${element.descripcion}</p>
         </div>
