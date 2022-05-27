@@ -1,4 +1,4 @@
-const form = document.querySelector(".form")
+// const form = document.querySelector(".form")
 // productos
 class Producto {
     constructor(id, nombre, img, destacado) {

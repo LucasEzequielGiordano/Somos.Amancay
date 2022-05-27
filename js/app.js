@@ -14,9 +14,6 @@ productosDestacados.forEach(element => {
           <img src="${element.img}" class="card-img-top" alt="...">
         <div class="card-body text-center">
           <h5 class="card-title nombreProducto text-center">${element.nombre}</h5>
-          <p class="card-text textoExpositor">Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Porro
-            mollitia ratione sed quo ut non aspernatur vero vitae praesentium est.</p>
           <a href="#" class="btn btn-secondary btnComprar botonColorVioleta">Comprar</a>
         </div>
       </div>
@@ -52,32 +49,32 @@ function seccionProductos() {
   })
 }
 
-const search = document.getElementById("search")
-const lupa = document.getElementById("botonBusqueda")
-// filtrado de busqueda
-lupa.addEventListener("click", (e) => {
-  let searchValue = search.value
-  let stockBusqueda = document.createElement("div")
-  stockBusqueda.classList.add("stockProductos")
-  if (searchValue == null || searchValue == undefined || searchValue == '' || searchValue.trim() == '') {
-    window.location.reload()
-  } else {
-    e.preventDefault()
-    main.textContent = ''
-    search.value = ''
-    main.innerHTML = `<h1 class="titleProductos">Productos</h1>`
-    let productosBuscados = productos.filter(element => element.nombre.toLowerCase() == searchValue)
-    productosBuscados.forEach(element => {
-      stockBusqueda.innerHTML += `
-      <div class="shadow card cardProductos" id="${element.id}" style="width: 18rem;">
-        <img src="${element.img}" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">${element.nombre}</h5>
-          <a href="#" class="btn btn-primary btnComprar">Comprar</a>
-        </div>
-      </div>
-      `
-      main.appendChild(stockBusqueda)
-    })
-  }
-})
+// const search = document.getElementById("search")
+// const lupa = document.getElementById("botonBusqueda")
+// // filtrado de busqueda
+// lupa.addEventListener("click", (e) => {
+//   let searchValue = search.value
+//   let stockBusqueda = document.createElement("div")
+//   stockBusqueda.classList.add("stockProductos")
+//   if (searchValue == null || searchValue == undefined || searchValue == '' || searchValue.trim() == '') {
+//     window.location.reload()
+//   } else {
+//     e.preventDefault()
+//     main.textContent = ''
+//     search.value = ''
+//     main.innerHTML = `<h1 class="titleProductos">Productos</h1>`
+//     let productosBuscados = productos.filter(element => element.nombre.toLowerCase() == searchValue)
+//     productosBuscados.forEach(element => {
+//       stockBusqueda.innerHTML += `
+//       <div class="shadow card cardProductos" id="${element.id}" style="width: 18rem;">
+//         <img src="${element.img}" class="card-img-top" alt="...">
+//         <div class="card-body">
+//           <h5 class="card-title">${element.nombre}</h5>
+//           <a href="#" class="btn btn-primary btnComprar">Comprar</a>
+//         </div>
+//       </div>
+//       `
+//       main.appendChild(stockBusqueda)
+//     })
+//   }
+// })
